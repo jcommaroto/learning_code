@@ -1,21 +1,19 @@
 import os
 #https://docs.python.org/3/library/os.html
 
-
-print("Let's Get the User Environment")
+print("Let's Get Some User Environment Information")
 print(os.environ)
 print(os.getenv("LOGNAME"))
-
 system = os.uname()
 print(system)
 print(system[0])
+
 print(os.name) 
 
 print("Get the Current Directory")
 print(os.getcwd()) #This funtion gets the current working directory
 
 print("Make a New Folder")
-
 directorycheck = os.path.exists("newdir") #This will check if a given directory exists
 #Can also use os.path.isdir
 
